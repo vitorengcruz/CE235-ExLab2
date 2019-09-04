@@ -26,7 +26,7 @@
       <Compiler v="GNU C Compiler" />
       <boolgroup name="Generate linker file" v="yes">
         <Stack_size v="1024" />
-        <Heap_size v="0" />
+        <Heap_size v="8192" />
         <Set_memory_segments_to_default v="Click to set default &amp;gt;" />
         <Vector_table_copy_in_RAM v="yes" />
         <Default_memory_for_interrupts v="INTERNAL FLASH" />
@@ -192,6 +192,19 @@
     <Enabled v="Y" />
     <Properties>
       <Name v="Task2" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="gpio1" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="gpio1" />
       <Component_version v="1.3.0" />
     </Properties>
     <Methods>

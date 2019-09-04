@@ -2,7 +2,7 @@
 <GenerationInfo_G_C>
   <Options>
     <ProjectName>exercicioLab2</ProjectName>
-    <ProjectDirectory>C:\Repositorio_ITA\CE-235\exercicioLab2\</ProjectDirectory>
+    <ProjectDirectory>C:\Repositorio_ITA\CE235-ExLab2\exercicioLab2\</ProjectDirectory>
     <ProjectMainModuleName>main</ProjectMainModuleName>
     <DestEventsDirectory>Sources\</DestEventsDirectory>
     <DestDriversSubDirectory>..\Generated_Code\</DestDriversSubDirectory>
@@ -27,7 +27,7 @@
         <Line>Documentation\doxygen\pex.css</Line>
       </GenExtraFiles>
       <GenExtraFileSrcDir9>Repositories\lib\doxygen\</GenExtraFileSrcDir9>
-      <XtraAge0>1327334892</XtraAge0>
+      <XtraAge0>1327792865</XtraAge0>
       <XtraAge1>1327334649</XtraAge1>
       <XtraAge2>1327334649</XtraAge2>
       <XtraAge3>1327335139</XtraAge3>
@@ -840,7 +840,7 @@
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>4</ProjectModificationStamp>
+    <ProjectModificationStamp>7</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -1649,7 +1649,7 @@
     <ExtraFile0>SDK\platform\osa\inc\fsl_os_abstraction_free_rtos.h</ExtraFile0>
     <ExtraFile1>SDK\platform\osa\inc\fsl_os_abstraction.h</ExtraFile1>
     <ExtraFile2>SDK\platform\osa\src\fsl_os_abstraction_free_rtos.c</ExtraFile2>
-    <InhrCompID_13>
+    <InhrCompID_22>
       <Generated>false</Generated>
       <GenCompName />
       <GenComponentVersion>??.???</GenComponentVersion>
@@ -1676,7 +1676,7 @@
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
       <GenMethodPos>0</GenMethodPos>
       <GenExtraFilesCount>0</GenExtraFilesCount>
-    </InhrCompID_13>
+    </InhrCompID_22>
     <InhrCompID_14>
       <Generated>true</Generated>
       <GenCompName>free_rtos</GenCompName>

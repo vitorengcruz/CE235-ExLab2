@@ -43,7 +43,7 @@ extern "C" {
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
 /*
-** ===================================================================
+** ===================================================================++
 **     Callback    : Task2_task
 **     Description : Task function entry.
 **     Parameters  :
@@ -54,19 +54,25 @@ extern "C" {
 void Task2_task(os_task_param_t task_init_data)
 {
   /* Write your local variable definition here */
+	uint8_t estadoLedVermelho = 0;
   
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
     /* Write your code here ... */
     
-	ledrgb_clearRedLed();
-    
-	OSA_TimeDelay(1000);
-   
-	ledrgb_setRedLed();
-
-	OSA_TimeDelay(1000);
+    switch( estadoLedVermelho ) {
+    case 0:
+    	ledrgb_clearRedLed();
+    	estadoLedVermelho = 1;
+    	OSA_TimeDelay(1000);
+    	break;
+    case 1:
+    	ledrgb_setRedLed();
+    	estadoLedVermelho = 0;
+		OSA_TimeDelay(1000);
+		break;
+    }
     
     
 #ifdef PEX_USE_RTOS   
@@ -86,21 +92,25 @@ void Task2_task(os_task_param_t task_init_data)
 void Task1_task(os_task_param_t task_init_data)
 {
   /* Write your local variable definition here */
+	uint8_t estadoLedVerde = 0;
   
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
     /* Write your code here ... */
     
-    
-	ledrgb_setGreenLed();
-
-	OSA_TimeDelay(1000);
-   
-	ledrgb_clearGreenLed();
-
-	OSA_TimeDelay(1000);
-
+    switch( estadoLedVerde ) {
+    case 0:
+    	ledrgb_setGreenLed();
+    	estadoLedVerde = 1;
+    	OSA_TimeDelay(1000);
+    	break;
+    case 1:
+    	ledrgb_clearGreenLed();
+		estadoLedVerde = 0;
+		OSA_TimeDelay(1000);
+		break;
+    }
     
     
 #ifdef PEX_USE_RTOS   
